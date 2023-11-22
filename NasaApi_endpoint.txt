@@ -1,0 +1,60 @@
+nasa api key our API key for birch5trice@gmail.com is:
+
+FbObavevTOIe6wbAREYidNxm2bBSzIBkvxwDiEXx
+
+
+You will be recording the steps as you go, but the first set of tasks is for the nasa api (https://api.nasa.gov/):
+1 get the api key
+2 figure out what the base url and endpoint is for an image search
+3 be able to describe the response for that endpoint
+
+
+https://images-api.nasa.gov
+API endpoint
+Endpoint	
+ /search?q={q}	
+/asset/{nasa_id}	
+ /metadata/{nasa_id}	
+/captions/{nasa_id}
+/album/{album_name}
+
+
+search url
+GET /search?q={q}
+https://images-api.nasa.gov/search
+?q=apollo%2011
+
+Retrieving a media asset’s manifest
+GET /asset/{nasa_id}
+"https://images-api.nasa.gov/asset/as11-40-5874"
+
+
+Retrieving a media asset’s metadata location
+GET /metadata/{nasa_id}
+"https://images-assets.nasa.gov/image/as11-40-5874/metadata.json"
+
+
+
+Retrieving a video asset’s captions location
+GET /captions/{nasa_id}
+"https://images-assets.nasa.gov/video/172_ISS-Slosh/172_ISS-Slosh.sr
+
+
+
+Retrieving a media album’s contents
+GET /album/album_name
+https://images-api.nasa.gov/album/apollo"
+
+
+The next step is to create a React application using vite, and use react-router-dom to have the following three routes:
+/ goes to Home
+/nasalist goes to the NASA search page
+/about goes to About
+You only want the boiler plate and an <h1> with the title of the page you're on
+
+The next step is to add the seach bar (you can use react movies) but just console.log the search term when the user hits submit(search)
+
+https://pscohorts.slack.com/files/U05T06126BG/F066TT4DNS0/steps_for_working_with_the_nasa_api.docx?origin_team=T04411PBUN8&origin_channel=C05MSP9S421
+
+Im missing  images, my challenges at times is the starting point.
+
